@@ -9,7 +9,15 @@ from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-# === === === === === === === === === === === === === === === === === === === === === === === ===
+from tensorflow.keras.preprocessing.image import load_img
+from tensorflow.keras.models import Model
+from tensorflow.keras.applications.inception_v3 import InceptionV3, preprocess_input, decode_predictions
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import  img_to_array
+
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+# =========================== jupyter ===========================
 
 def load_document(filename):
     file = open(filename, 'r')
@@ -168,11 +176,13 @@ def generate_description(model, tokenizer, photo_feature, max_length):
             break
     return in_text
 
+
 def word_for_id(integer, tokenizer):
     for word, index in tokenizer.word_index.items():
         if index == integer:
             return word
     return None
+
 
 def clean_summary(summary):
     idx = summary.find('startseq ')
@@ -221,3 +231,18 @@ def plot_pred(predictions):
         count += 1
         
     plt.show()
+    
+# =========================== tkinter ===========================
+
+def extract_image_feature(filename):
+    
+    model = InceptionV3()
+    model = Model(inputs=model.inputs, outputs=model.layers[-2].output)
+
+    image = load_img(filename, target_size=(299,299))
+    image = img_to_array(image)
+    image = image.reshape((1, image.shape[0], image.shape[1], image.shape[2]))
+    image = preprocess_input(image)
+    feature = model.predict(image, verbose=0)
+
+    return feature
