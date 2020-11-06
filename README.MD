@@ -1,4 +1,4 @@
-<center><h1> Photo caption using deep learning and tkinter. </h1></center>
+# Photo caption using deep learning and tkinter.
 
 This is my mini project about Image captioning.
 
@@ -16,10 +16,8 @@ Flickr8k dataset downloaded direct from [Jason Brownlee dataset GitHub repositor
 - [Flickr8k_text.zip](https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip)
 
 The dataset has a pre-defined training dataset (6000 images), validation dataset (1000 images), and test dataset (1000 images).
- 
-<br/><br/>
 
-<center><h3> Example </h3></center>
+### Example 
 
 > Program start
 >><img src="https://github.com/pawelgodkowicz/image_caption/blob/master/img_readme/01.png?raw=true" width="332" height="190">
@@ -37,4 +35,5 @@ The dataset has a pre-defined training dataset (6000 images), validation dataset
 ### Sources:
 
 - Dogs and humans pictures downloaded from [www.surfcityusa.com ](https://www.surfcityusa.com/things-to-do/beaches/dog-beach/), [www.witreader.com ](https://witreader.com/articles/841395073709/) respectively.
+
 -[Jason Brownlee - Machine Learning Mastery](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)
