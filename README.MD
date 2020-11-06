@@ -36,4 +36,4 @@ The dataset has a pre-defined training dataset (6000 images), validation dataset
 
 - Dogs and humans pictures downloaded from [www.surfcityusa.com ](https://www.surfcityusa.com/things-to-do/beaches/dog-beach/), [www.witreader.com ](https://witreader.com/articles/841395073709/) respectively.
 
--[Jason Brownlee - Machine Learning Mastery](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)
+- [Jason Brownlee - Machine Learning Mastery](https://machinelearningmastery.com/develop-a-deep-learning-caption-generation-model-in-python/)
