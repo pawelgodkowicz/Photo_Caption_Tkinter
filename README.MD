@@ -10,8 +10,6 @@ To simply run the program write in your command line:
 ...> python caption_app.py
 ```
 
-python caption_app.py in your cmd 
-
 ### Main utilities
 - python 3.7.6 
 - tensorflow-gpu
