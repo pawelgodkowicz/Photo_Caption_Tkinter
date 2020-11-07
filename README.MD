@@ -4,6 +4,14 @@ This is my mini project about Image captioning.
 
 The goal of the project was to create a GUI using a tkinter to automatically predict the description of a given image.
 
+To simply run the program write in your command line:
+
+```console
+...> python caption_app.py
+```
+
+python caption_app.py in your cmd 
+
 ### Main utilities
 - python 3.7.6 
 - tensorflow-gpu
